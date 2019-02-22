@@ -1,0 +1,15 @@
+<!ELEMENT marcadores (creador, compartido?, pagina*)>
+<!ELEMENT creador (#PCDATA)>
+<!ELEMENT compartido (usuario+)>
+<!ELEMENT usuario (#PCDATA)>
+<!ELEMENT pagina (nombre, descripcion, url, categorias+, logo, puntuacion)>
+<!ATTLIST pagina idioma (es|en|fr|pt) #IMPLIED>
+<!ATTLIST pagina codigo ID #REQUIRED>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT descripcion (#PCDATA)>
+<!ATTLIST descripcion idioma (es|en) #REQUIRED>
+<!ELEMENT url (#PCDATA)>
+<!ELEMENT categorias (etiqueta+)>
+<!ELEMENT etiqueta (#PCDATA)>
+<!ELEMENT logo (#PCDATA)>
+<!ELEMENT puntuacion (#PCDATA)>
